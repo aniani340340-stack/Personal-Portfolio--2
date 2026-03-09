@@ -7,10 +7,11 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import ImageSlider from "./components/ImageSlider"
-
+import CursorGlow from "./components/CursorGlow"
 function App() {
   return (
     <>
+      <CursorGlow/>
       <Navbar/>
       <Hero />
       <About />
