@@ -1,37 +1,61 @@
+import { FaCheckCircle, FaSpinner, FaRocket } from "react-icons/fa";
+
 export default function Progress() {
   return (
-    <section className="py-20 text-center">
-
-      <h2 className="text-4xl font-bold mb-10">
-        Learning Progress
+    <section
+      id="progress"
+      className="py-24 bg-gradient-to-b from-black via-slate-950 to-black text-white"
+    >
+      <h2 className="text-4xl font-bold text-center mb-16 text-purple-400">
+        Learning Journey
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-6 px-10">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 px-6">
 
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-green-400 font-bold mb-4">Completed</h3>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>React</p>
+        {/* Completed */}
+        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-8 shadow-lg hover:scale-105 transition">
+          <div className="flex items-center gap-3 mb-6">
+            <FaCheckCircle className="text-green-400 text-2xl" />
+            <h3 className="text-xl font-bold text-green-400">Completed</h3>
+          </div>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
         </div>
 
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-yellow-400 font-bold mb-4">In Progress</h3>
-          <p>Backend Development</p>
-          <p>REST APIs</p>
-          <p>DSA</p>
+        {/* In Progress */}
+        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-8 shadow-lg hover:scale-105 transition">
+          <div className="flex items-center gap-3 mb-6">
+            <FaSpinner className="text-yellow-400 text-2xl" />
+            <h3 className="text-xl font-bold text-yellow-400">In Progress</h3>
+          </div>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>Backend Development</li>
+            <li>REST APIs</li>
+            <li>Data Structures & Algorithms</li>
+          </ul>
         </div>
 
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-blue-400 font-bold mb-4">Next Goals</h3>
-          <p>Cloud Computing</p>
-          <p>System Design</p>
-          <p>AI Projects</p>
+        {/* Next Goals */}
+        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-8 shadow-lg hover:scale-105 transition">
+          <div className="flex items-center gap-3 mb-6">
+            <FaRocket className="text-purple-400 text-2xl" />
+            <h3 className="text-xl font-bold text-purple-400">Next Goals</h3>
+          </div>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>Cloud Computing</li>
+            <li>System Design</li>
+            <li>AI Projects</li>
+          </ul>
         </div>
 
       </div>
-
     </section>
-  )
+  );
 }

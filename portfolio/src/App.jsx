@@ -6,6 +6,7 @@ import Progress from "./components/Progress"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import ImageSlider from "./components/ImageSlider"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Skills />
       <Progress />
       <Projects />
+      <ImageSlider />
       <Contact />
       <Footer />
     </>
