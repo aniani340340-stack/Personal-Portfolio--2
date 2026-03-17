@@ -27,8 +27,18 @@ export default function Hero() {
 
         <div className="mt-10 flex justify-center gap-6">
 
-          <button className="px-7 py-3 bg-purple-600 hover:bg-purple-700 rounded-xl transition transform hover:scale-105 shadow-lg">
-            View Projects
+          <button className="relative px-7 py-3 bg-purple-600 rounded-xl overflow-hidden group transition">
+
+            <span className="relative z-10">View Projects</span>
+
+            <div className="absolute inset-0 bg-purple-400 opacity-0 group-hover:opacity-20 blur-xl transition"></div>
+
+          </button><button className="relative px-7 py-3 bg-purple-600 rounded-xl overflow-hidden group transition">
+
+            <span className="relative z-10">View Projects</span>
+
+            <div className="absolute inset-0 bg-purple-400 opacity-0 group-hover:opacity-20 blur-xl transition"></div>
+
           </button>
 
           <button className="px-7 py-3 border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white rounded-xl transition">
